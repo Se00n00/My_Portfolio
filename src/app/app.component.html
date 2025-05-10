@@ -1,4 +1,43 @@
-<main class="w-96 h-96 bg-amber-800 h-screen w-screen">a</main>
+<div class="h-screen flex flex-col justify-around">
+  <app-profile></app-profile>
+  
+  <div class="flex flex-row justify-between m-10 lg:max-w-8/12">
+    
+    <!-- Swipe Hint -->
+    <div class="text-gray-400 text-sm">
+      Swipe Down or Click on menu
+    </div>
+
+    <!--Menu-->
+    <div class="flex">
+      
+      <div  class="w-full flex rounded-lg border-1 border-gray-600/[0.3] hover:border-gray-600/[0.4]  bg-gray-100 transition-all">
+        <p>MENU</p>
+        
+        <!-- Ng For-->
+        <div class="flex">
+          <div class="flex flex-col sm:flex-row items-start p-2 rounded-md"> <!--Small <-> Large Screen-->
+          
+            <div class="w-10 aspect-square border border-black/[0.1] hover:border-black/[0.2] rounded-md transition-all">
+            </div>
+            
+          </div>
+          <div class="flex flex-col sm:flex-row items-start p-2  rounded-md"> <!--Small <-> Large Screen-->
+            
+            <div class="w-10 aspect-square border border-black/[0.1] hover:border-black/[0.2] rounded-md transition-all">
+            </div>
+            
+          </div>
+        </div>
+        
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->

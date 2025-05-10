@@ -1,0 +1,13 @@
+{
+  "profile_image": "assets/images/me.jpg",
+  "name": "Mohit Kumar",
+  "short_about": "a Machine Learning Engineer Currently Pursuing my graduation through AIML specialization Course from UPES.",
+  "profession": "Machine Learning Engineer | Data Scientist | Software Engineer",
+  "tags": ["Deep Learning", "Machine Learning", "NLP"],
+  "current_location": "Gaya, Bihar",
+  "contacts": [
+    {"image": "assets/icons/github.png", "link": "link/to/github", "label": "github"},
+    {"image": "assets/icons/linkedin.png", "link": "link/to/linkedin", "label": "linkedin"},
+    {"image": "assets/icons/email.png", "link": "mailto:email@example.com", "label": "email"}
+  ]
+}
