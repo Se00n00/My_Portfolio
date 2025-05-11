@@ -6,8 +6,8 @@
   "tags": ["Deep Learning", "Machine Learning", "NLP"],
   "current_location": "Gaya, Bihar",
   "contacts": [
-    {"image": "assets/icons/github.png", "link": "link/to/github", "label": "github"},
-    {"image": "assets/icons/linkedin.png", "link": "link/to/linkedin", "label": "linkedin"},
-    {"image": "assets/icons/email.png", "link": "mailto:email@example.com", "label": "email"}
+    {"image": "project_icon/github.png", "link": "link/to/github", "label": "github"},
+    {"image": "project_icon/linkedin.png", "link": "link/to/linkedin", "label": "linkedin"},
+    {"image": "project_icon/email.png", "link": "mailto:email@example.com", "label": "email"}
   ]
 }

@@ -1,0 +1,34 @@
+[
+    {
+        "title": "My Project Title",
+        "description": "This is a brief description of the project.",
+        "links": [
+          {
+            "icon": "project_icon/github",
+            "text": "View Code on Github"
+          }
+        ],
+        "techstack": [
+          {
+            "icon": "project_icon/techstack/python",
+            "stack_label": "python"
+          }
+        ]
+    },
+    {
+        "title": "My Project Title",
+        "description": "This is a brief description of the project.",
+        "links": [
+          {
+            "icon": "project_icon/github",
+            "text": "View Code on Github"
+          }
+        ],
+        "techstack": [
+          {
+            "icon": "project_icon/techstack/python",
+            "stack_label": "python"
+          }
+        ]
+    }      
+]

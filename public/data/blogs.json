@@ -1,0 +1,16 @@
+[
+    {
+        "title": "My Database Resource",
+        "links": "https://example.com/database-guide",
+        "label": "database",
+        "icon": "blog_icon/db.svg",
+        "color": "#0000FF"
+    },
+    {
+        "title": "My Database Resource",
+        "links": "https://example.com/database-guide",
+        "label": "database",
+        "icon": "blog_icon/db.svg",
+        "color": "#0000FF"
+    }  
+]

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { MenuComponent } from '../menu/menu.component';
 
 interface ProfileData {
   profile_image: string;
@@ -20,7 +21,7 @@ interface Contact {
 
 @Component({
   selector: 'app-profile',
-  imports: [CommonModule],
+  imports: [CommonModule, MenuComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })

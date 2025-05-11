@@ -1,5 +1,5 @@
 <div class="flex h-full items-center justify-center">
-  <div class="flex flex-col items-center m-10 lg:max-w-8/12">
+  <div class="flex flex-col items-center relative">
     <!-- Loading State -->
     <div *ngIf="isLoading" class="flex justify-center items-center h-64">
       <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-500"></div>
@@ -45,7 +45,7 @@
         </div>
       </div>
       <!-- Contact Menu -->
-      <div *ngIf="profileData && !isLoading" class="flex flex-col items-center gap-3 w-16">
+      <div *ngIf="profileData && !isLoading" class="absolute -right-16 flex flex-col items-center gap-3 w-16">
         <a *ngFor="let contact of profileData.contacts" 
           [href]="contact.link" 
           class="w-10 h-10 bg-gray-100 hover:bg-gray-200 border border-black/[0.1] hover:border-black/[0.2] rounded-sm flex items-center justify-center transition-colors">
@@ -53,6 +53,10 @@
         </a>
       </div>
     </div>
+
+    <app-menu class="w-full"></app-menu>
+    
+
     
     
     
