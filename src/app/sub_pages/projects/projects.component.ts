@@ -1,11 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
+interface Project {
+  title: string;
+  description: string;
+  links: { icon: string; text: string }[];
+  techstack: { icon: string; stack_label: string }[];
+}
 
 @Component({
+  imports: [CommonModule],
   selector: 'app-projects',
-  imports: [],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrls: ['./projects.component.css'],
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  projects: Project[] = [];
 
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get<Project[]>('data/projects.json').subscribe((data) => {
+      this.projects = data;
+    });
+  }
 }

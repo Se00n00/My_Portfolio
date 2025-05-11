@@ -1,1 +1,41 @@
-<p>blogs works!</p>
+<div>
+    <div class="flex justify-between">
+        <h2 class=" font-normal text-lg  mb-2 uppercase">Blogs</h2>
+        <div class="bg-gray-400/[0.1] w-10 h-10 rounded-lg border hover:bg-gray-400/[0.2] border-black/[0.2] hover:border-black/[0.4] transition-all">
+            <a href=""></a>
+        </div>
+    </div>
+  
+  <p class="font-light text-black/[0.8] mb-4">
+    Here are some blogs that detail my experiences, insights, and lessons learned throughout my journey
+  </p>
+
+  <div *ngIf="blogs.length; else loading" class="space-y-6">
+    <a *ngFor="let blog of blogs"
+       [href]="blog.links"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="flex items-center justify-between bg-white p-2 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-200 group">
+      
+      <div class="flex flex-row items-center space-x-4">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center"
+             [ngStyle]="{ 'background-color': blog.color + '20' }">
+          <img [src]="'assets/' + blog.icon" alt="icon" class="w-6 h-6">
+        </div>
+        <div class="flex space-x-2">
+          <h3 class="font-light text-gray-900 group-hover:text-blue-700 transition">{{ blog.title }}</h3>
+          <span class="text-[10px] uppercase tracking-wide font-light bg-gray-100 text-gray-600 px-2 py-1 rounded-lg mt-1 inline-block">
+            {{ blog.label }}
+          </span>
+        </div>
+      </div>
+
+      <div class="text-gray-400 mr-2 text-xl group-hover:text-blue-600 transition">></div>
+    </a>
+  </div>
+
+  <ng-template #loading>
+    <p class="text-center text-gray-500">Loading blogs...</p>
+  </ng-template>
+
+</div>

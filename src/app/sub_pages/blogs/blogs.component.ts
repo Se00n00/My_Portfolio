@@ -1,11 +1,19 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-blogs',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './blogs.component.html',
-  styleUrl: './blogs.component.css'
 })
-export class BlogsComponent {
+export class BlogsComponent implements OnInit {
+  blogs: any[] = [];
 
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get<any[]>('data/blogs.json').subscribe(data => {
+      this.blogs = data;
+    });
+  }
 }

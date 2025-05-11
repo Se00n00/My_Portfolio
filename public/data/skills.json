@@ -1,22 +1,16 @@
 [
   {
-    "skill_title": "database",
+    "skill_title": "Database",
     "skills": [
-      {
-        "skill_icon": "skills_icon/mongodb.svg",
-        "skill_lable": "mongodb",
-        "color": "#00FF00"
-      }
+      { "skill_icon": "skills_icon/mongodb.svg", "skill_lable": "MongoDB", "color": "#00FF00" },
+      { "skill_icon": "skills_icon/mysql.svg", "skill_lable": "MySQL", "color": "#00758F" }
     ]
   },
   {
-    "skill_title": "database",
+    "skill_title": "Frontend",
     "skills": [
-      {
-        "skill_icon": "skills_icon/mongodb.svg",
-        "skill_lable": "mongodb",
-        "color": "#00FF00"
-      }
+      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD0031" },
+      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB" }
     ]
   }
 ]
