@@ -1,39 +1,23 @@
 <div class="flex w-full flex-col gap-5 sm:flex-row justify-between ">
     
-    <!-- Swipe Hint -->
-    <div class="text-gray-400 text-sm">
-      Swipe Down or Click on menu
-    </div>
-
-    <!--Menu-->
-    <div class="flex">
-      
-      <div  class="w-full flex rounded-lg border-1 border-gray-600/[0.3] hover:border-gray-600/[0.4]  bg-gray-100 transition-all">
-        <p>MENU</p>
-        
-        <!-- Ng For-->
-        <div class="flex">
-          <div class="flex flex-col sm:flex-row items-start p-2 rounded-md"> <!--Small <-> Large Screen-->
-          
-            <div class="w-10 aspect-square border border-black/[0.1] hover:border-black/[0.2] rounded-md transition-all">
-            </div>
-            
-          </div>
-          <div class="flex flex-col sm:flex-row items-start p-2  rounded-md"> <!--Small <-> Large Screen-->
-            
-            <div class="w-10 aspect-square border border-black/[0.1] hover:border-black/[0.2] rounded-md transition-all">
-            </div>
-            
-          </div>
-        </div>
-        
-
-
-      </div>
-
-    </div>
-
+  <!-- Swipe Hint -->
+  <div class="text-gray-400 text-sm">
+    Swipe Down or Click on menu
   </div>
+
+  <!--Menu-->
+  <div class="flex items-center space-x-4 justify-between bg-white p-1 rounded-xl shadow hover:shadow-md transition-all border border-gray-200 group">
+          
+    <h3 class="font-extralight mr-10 ml-2 text-gray-900 group-hover:text-blue-700 uppercase transition">Menu</h3>
+    
+    <div *ngFor="let item of menu" class="flex items-center flex-row space-x-4">
+      <a class="w-10 h-10 rounded-lg flex items-center justify-center bg-amber-100" [title]="item.title">
+        <img [src]= "item.image" alt=" " class="w-6 h-6">
+      </a>
+    </div>
+  </div>
+
+</div>
 
 <div class="flex flex-col gap-10">
   <app-about></app-about>

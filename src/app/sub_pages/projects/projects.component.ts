@@ -6,7 +6,8 @@ interface Project {
   title: string;
   description: string;
   links: { icon: string; text: string }[];
-  techstack: { icon: string; stack_label: string }[];
+  techstack: { icon: string; stack_label: string; color:string }[];
+  keywords: string[];
 }
 
 @Component({

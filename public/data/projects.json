@@ -11,13 +11,15 @@
     "techstack": [
       {
         "icon": "project_icon/techstack/python",
-        "stack_label": "python"
+        "stack_label": "python",
+        "color": "#00FF00"
       }
-    ]
+    ],
+    "keywords":["AlexNet","Transformer"]
   },
   {
     "title": "My Project Title",
-    "description": "This is a brief description of the project.",
+    "description": "This project is my personal space where i implement concepts learned in college and build things from scratch in c. it covers various topics including random tasks like video extraction and elevator logic, as well as data structures like stacks, queues, and different types of linked lists. it's a hands-on way to apply course knowledge to real coding challenges. ",
     "links": [
       {
         "icon": "project_icon/github",
@@ -27,8 +29,10 @@
     "techstack": [
       {
         "icon": "project_icon/techstack/python",
-        "stack_label": "python"
+        "stack_label": "python",
+        "color": "#00FF00"
       }
-    ]
+    ],
+    "keywords":["AlexNet","Transformer"]
   }      
 ]
