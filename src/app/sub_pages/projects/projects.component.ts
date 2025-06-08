@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 interface Project {
   title: string;
   label: string;
+  description_points: string[];
   description: string;
   links: { icon: string; link:string; text: string }[];
   techstack: { icon: string; stack_label: string; color:string }[];

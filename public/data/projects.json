@@ -1,52 +1,70 @@
 [
   {
-    "title": "My Project Title",
-    "label": "CORE",
-    "description": "This is a brief description of the project.",
+    "title": "CNN-Using-Java-ND4J",
+    "label": "DEEP LEARNING",
+    "description_points": ["Developed and implemented a convolutional neural network using ND4J (for efficient tensor operations) featuring a scalable CNN framework supporting multiple layers.", "Achieved 83.3% training accuracy on CIFAR-10 Dataset.", "Implemented convolutional, max-pooling, average-pooling, and dense layers from scratch."],
+    "description": "",
     "links": [
       {
         "icon": "project_icon/github.svg",
-        "link": "link/to/project",
+        "link": "https://github.com/Se00n00/CNN-Using-Java-ND4J",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/java.webp", "skill_label": "Java", "color": "#C3551760" }
+    ],
+    "project_images": [],
+    "keywords":["CNN", "ND4J"]
+  },
+  {
+    "title": "Pokemon_info",
+    "label": "WEB DEVELOPMENT",
+    "description_points": [],
+    "description": "Pokémon Info is a web application that fetches and displays detailed information about Pokémon using the PokéAPI. This project allows users to search for Pokémon by name or ID and retrieve key details such as type, abilities, stats, and more.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/pokemon_info",
         "text": "Code"
       },
       {
-        "icon": "project_icon/github.svg",
-        "link": "link/to/project2",
-        "text": "Code"
+        "icon": "live",
+        "link": "https://se00n00.github.io/pokemon_info/",
+        "text": "Live"
       }
     ],
     "techstack": [
-      {
-        "icon": "project_icon/techstack/python",
-        "stack_label": "python",
-        "color": "#00FF00"
-      }
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
     ],
-    "project_images": [
-      "a.jpg"
-    ],
-    "keywords":["AlexNet","Transformer","AlexNet","Transformer"]
+    "project_images": [],
+    "keywords":[]
   },
   {
-    "title": "My Project Title",
-    "label": "CORE",
-    "description": "This project is my personal space where i implement concepts learned in college and build things from scratch in c. it covers various topics including random tasks like video extraction and elevator logic, as well as data structures like stacks, queues, and different types of linked lists. it's a hands-on way to apply course knowledge to real coding challenges. ",
+    "title": "Personal Blog",
+    "label": "WEB DEVELOPMENT",
+    "description_points":[],
+    "description": "Blogs from my intrests",
     "links": [
       {
-        "icon": "project_icon/github",
-        "link": "link/to/project1",
-        "text": "View Code on Github"
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/Personal-Blog",
+        "text": "Code"
+      },
+      {
+        "icon": "live",
+        "link": "https://se00n00.github.io/Personal-Blog/",
+        "text": "Live"
       }
     ],
     "techstack": [
-      {
-        "icon": "project_icon/techstack/python",
-        "stack_label": "python",
-        "color": "#00FF00"
-      }
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
     ],
-    "project_images": [
-    ],
-    "keywords":["AlexNet","Transformer"]
-  }      
+    "project_images": [],
+    "keywords":[]
+  }
 ]

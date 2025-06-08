@@ -31,16 +31,38 @@
           <!-- Project Link -->
           <div class="flex items-center space-x-2">
             <a [href]="link.link" *ngFor="let link of project.links" class="flex items-center gap-1 text-gray-400 text-xs bg-gray-100 hover:bg-gray-200 font-roboto rounded-2xl transition px-2 py-1">
-              <img [src]="link.icon" alt="link icon" class="h-5" />
+              
+              @if(link.icon === "live"){
+                <span class="relative flex size-3 h-5 items-center">
+                  <span class="absolute inline-flex h-[13px] w-full animate-ping rounded-full bg-gray-700 opacity-75"></span>
+                  <span class="relative inline-flex size-3 rounded-full bg-gray-800"></span>
+                </span>
+
+                <!-- <img [src]="link.icon" alt="link icon" class="h-5" /> -->
+              }@else{
+                <img [src]="link.icon" alt="link icon" class="h-5" />
+              }
               {{ link.text }}
             </a>
           </div>
         </div>
         
         <div class="lg:flex">
-          <p class="lg:flex-1 font-light font-roboto text-sm text-black/[0.8] mt-2 leading-relaxed">
-            {{ project.description }}
-          </p>
+
+          @if (project.description_points.length > 0) {
+            <div class="flex flex-col">
+              @for (points of project.description_points; track $index) {
+                <p class="lg:flex-1 font-light font-roboto text-sm text-black/[0.8] mt-2 leading-relaxed">
+                  - {{ points }}
+                </p>
+              }
+            </div>
+          }@else {
+            <p class="lg:flex-1 font-light font-roboto text-sm text-black/[0.8] mt-2 leading-relaxed">
+              {{ project.description }}
+            </p>
+          }
+          
   
           <!-- Project images -->
           @if (project.project_images.length > 0) {
@@ -66,8 +88,8 @@
           <div class="flex space-x-1">
               <div *ngFor="let tech of project.techstack" class="flex items-center flex-row space-x-4">
                   <div class="w-10 h-10 rounded-lg flex items-center justify-center"
-                      [ngStyle]="{ 'background-color': tech.color + '20' }" [title]="tech.stack_label">
-                      <img [src]="'assets/' + tech.icon" alt=" " class="w-6 h-6">
+                      [ngStyle]="{ 'background-color': tech.color}" [title]="tech.stack_label">
+                      <img [src]="tech.icon" alt=" " class="w-6 h-6">
                   </div>
               </div>
           </div>

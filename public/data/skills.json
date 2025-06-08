@@ -2,36 +2,53 @@
   {
     "skill_title": "Database",
     "skills": [
-      { "skill_icon": "skills_icon/mongodb.svg", "skill_lable": "MongoDB", "color": "#00FF0040" },
-      { "skill_icon": "skills_icon/mysql.svg", "skill_lable": "MySQL", "color": "#00758F40" }
+      { "skill_icon": "icons/skills_icon/mongodb.webp", "skill_label": "MongoDB", "color": "#3F914160" },
+      { "skill_icon": "icons/skills_icon/mysql.png", "skill_label": "MySQL", "color": "#01547960" }
     ]
   },
   {
     "skill_title": "Frontend",
     "skills": [
-      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
-      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+      { "skill_icon": "icons/skills_icon/css.png", "skill_label": "CSS", "color": "#1664A160" },
+      { "skill_icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "skill_icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
     ]
   },
   {
-    "skill_title": "Frontend",
+    "skill_title": "Backend",
     "skills": [
-      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
-      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+      { "skill_icon": "icons/skills_icon/django.png", "skill_label": "Django", "color": "#0C2D2060" }
     ]
   },
   {
-    "skill_title": "Frontend",
+    "skill_title": "Languages & Scripts",
     "skills": [
-      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
-      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+      { "skill_icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" },
+      { "skill_icon": "icons/skills_icon/c.png", "skill_label": "C", "color": "#21348460" },
+      { "skill_icon": "icons/skills_icon/java.webp", "skill_label": "Java", "color": "#C3551760" },
+      { "skill_icon": "icons/skills_icon/javascript.webp", "skill_label": "JavaScript", "color": "#A99B3060" },
+      { "skill_icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "skill_icon": "icons/skills_icon/html.webp", "skill_label": "Html", "color": "#B6472B60" }
     ]
   },
   {
-    "skill_title": "Frontend",
+    "skill_title": "Machine Learning",
     "skills": [
-      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
-      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+      { "skill_icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" },
+      { "skill_icon": "icons/skills_icon/tensorflow.png", "skill_label": "Tensorflow", "color": "#D3822560" },
+      { "skill_icon": "icons/skills_icon/pandas.svg", "skill_label": "Pandas", "color": "#0B085260" },
+      { "skill_icon": "icons/skills_icon/numpy.png", "skill_label": "Numpy", "color": "#4470C160" },
+      { "skill_icon": "icons/skills_icon/matplotlib.svg", "skill_label": "Matplitlib", "color": "#E5C53160" },
+      { "skill_icon": "icons/skills_icon/seaborn.svg", "skill_label": "Seaborn", "color": "#53759860" }
+    ]
+  },
+  {
+    "skill_title": "Others",
+    "skills": [
+      { "skill_icon": "icons/skills_icon/git.png", "skill_label": "Git", "color": "#00040660" },
+      { "skill_icon": "icons/skills_icon/linux.png", "skill_label": "Linux", "color": "#00040660" },
+      { "skill_icon": "icons/skills_icon/github.webp", "skill_label": "Github", "color": "#00040660" },
+      { "skill_icon": "icons/skills_icon/huggingface.png", "skill_label": "Huggingface", "color": "#E5C12160" }
     ]
   }
 ]
