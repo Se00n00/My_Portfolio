@@ -1,7 +1,12 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/**/*.{html,js}'],
-    theme: {
-      extend: {},
+  content: ['./src/**/*.{html,ts}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        robotomono: ['"Roboto Mono"', 'monospace'],
+      },
     },
-    plugins: [],
-}
+  },
+  plugins: [],
+};

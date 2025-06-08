@@ -15,6 +15,9 @@
         "color": "#00FF00"
       }
     ],
+    "project_images": [
+      "a.jpg"
+    ],
     "keywords":["AlexNet","Transformer"]
   },
   {
@@ -32,6 +35,9 @@
         "stack_label": "python",
         "color": "#00FF00"
       }
+    ],
+    "project_images": [
+      "a.jpg"
     ],
     "keywords":["AlexNet","Transformer"]
   }      

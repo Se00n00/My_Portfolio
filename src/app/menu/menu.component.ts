@@ -13,10 +13,5 @@ import { SkillsComponent } from '../sub_pages/skills/skills.component';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-  menu = [
-    {"links":"link1", "title":"About", "color":"#00FF00", "image":"image"},
-    {"links":"link1", "title":"Projects", "color":"#0F0F00", "image":"image"},
-    {"links":"link1", "title":"Blogs", "color":"#00FF0F", "image":"image"},
-    {"links":"link1", "title":"Skills", "color":"#0F0FF0", "image":"image"}
-  ]
+  
 }

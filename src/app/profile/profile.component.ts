@@ -26,6 +26,13 @@ interface Contact {
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent implements OnInit {
+  menu = [
+    {"links":"about_subpage", "title":"About"},
+    {"links":"blogs_subpage", "title":"Blogs"},
+    {"links":"projects_subpage", "title":"Projects"},
+    {"links":"skills_subpage", "title":"Skills"}
+  ]
+  
   profileData: ProfileData | null = null;
   isLoading = true;
   error = false;
@@ -35,6 +42,23 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this.loadProfileData();
   }
+
+  scrollTo(id_reference: string) {
+    const element = document.getElementById(id_reference);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - 100; // your -100px offset
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    } else {
+      console.warn(`Element with ID "${id_reference}" not found.`);
+    }
+  }
+  
+  
 
   loadProfileData(): void {
     this.http.get<ProfileData>('data/profile.json')

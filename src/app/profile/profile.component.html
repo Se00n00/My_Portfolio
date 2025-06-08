@@ -1,5 +1,5 @@
-<div class="flex h-full items-center justify-center">
-  <div class="flex flex-col items-center relative lg:w-[65vw]">
+<div class="profile_page flex h-full items-center justify-center">
+  <div class="sub_profile_page flex flex-col items-center relative lg:w-[65vw]">
     <!-- Loading State -->
     <div *ngIf="isLoading" class="flex justify-center items-center h-64">
       <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-500"></div>
@@ -9,57 +9,83 @@
     <div *ngIf="error" class="text-red-500 text-center p-4">
       Failed to load profile data. Please try again later.
     </div>
-  
-    <!-- Profile Card & Contact Menu -->
-    <div class="flex w-full">
-      <div *ngIf="profileData && !isLoading" class="w-full rounded-lg border-2 border-black/[0.3] hover:border-black/[0.4] transition-all">
-        <div class="flex flex-col sm:flex-row items-start p-6 bg-gray-100 rounded-md"> <!--Small <-> Large Screen-->
-          <!-- Profile Image -->
-          <div class="mr-6">
-            <div class="w-[50vw] sm:w-[30vw] lg:w-[15vw] aspect-square border border-black/[0.1] hover:border-black/[0.2] bg-gray-200 rounded-md transition-all">
+
+    <!-- MENU BAR -->
+    <div class="menu_bar sticky top-10 flex w-full flex-col px-10 gap-5 sm:flex-row items-center justify-between bg-transparent backdrop-blur-lg p-1 rounded-xl shadow-2xl hover:shadow-md transition-all border border-gray-200">
     
-              <img [src]="profileData.profile_image" alt="Profile" class="w-full h-full object-cover">
-            </div>
-          </div>
-          
-          <!-- Profile Info -->
-          <div class="flex-1 flex flex-col justify-between">
-            <h1 class="text-xl font-semibold text-gray-700">{{ profileData.name }}</h1>
-            <p class="text-sm text-gray-500 mb-2">{{ profileData.profession }}</p>
-            
-            <p class="text-base text-gray-600 font-medium mb-4">{{ profileData.short_about }}</p>
-            
-            <!-- Tags -->
-            <div class="flex flex-wrap gap-2">
-              <span *ngFor="let tag of profileData.tags" 
-                    class="px-3 py-1 bg-gray-200 text-gray-600 text-xs rounded-full">
-                {{ tag }}
-              </span>
-            </div>
-          </div>
-          
-          <!-- Location -->
-          <div class="text-xs text-gray-500">
-            {{ profileData.current_location }}
+      <!-- Swipe Hint -->
+      <div class="flex items-center text-gray-400 text-sm font-roboto font-light cursor-pointer" (click)="scrollTo('home')">
+        <img src="favicon.svg" class="h-8 -left-5 relative">
+        Swipe Down or Click on menu >
+      </div>
+    
+      <!--Menu-->
+      <div class="flex items-center space-x-4 justify-between" >
+              
+        
+        <div *ngFor="let item of menu" class="flex items-center flex-row space-x-4">
+          <div class="h-10 cursor-pointer rounded-lg flex items-center justify-center" (click)="scrollTo(item.links)">
+            <h3 class="font-extralight font-roboto mr-1 ml-2 text-sm text-gray-900 hover:text-blue-700 uppercase transition">
+              {{item.title}}
+            </h3>
           </div>
         </div>
       </div>
-      <!-- Contact Menu -->
-      <div *ngIf="profileData && !isLoading" class="absolute -right-16 flex flex-col items-center gap-3 w-16">
-        <a *ngFor="let contact of profileData.contacts" 
-          [href]="contact.link" 
-          class="w-10 h-10 bg-gray-100 hover:bg-gray-200 border border-black/[0.1] hover:border-black/[0.2] rounded-sm flex items-center justify-center transition-colors">
-          <img [src]="contact.image" [alt]="contact.label" class="w-5 h-5">
-        </a>
-      </div>
+    
     </div>
 
-    <app-menu class="w-full"></app-menu>
-    
+    <!-- Profile Card & Contact Menu -->
+    <div id="home" class="flex flex-col w-full h-[90vh] mb-[5vh] justify-between">
+      <div></div>
 
-    
-    
-    
+      <div class="flex bg-slate-950/[0.05] rounded-sm p-2 border-1 border-black/[0.05]">
+        <div *ngIf="profileData && !isLoading" class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] w-full rounded-xl border-1 transition-all">
+          <div class="flex flex-col sm:flex-row items-start p-6"> <!--Small <-> Large Screen-->
+            
+            <!-- Profile Image -->
+            <div class="mr-6">
+              <div class="w-[50vw] sm:w-[30vw] lg:w-[15vw] aspect-square bg-black/[0.4] rounded-md transition-all">
+                <img [src]="profileData.profile_image" alt=" " class="w-full h-full object-cover">
+              </div>
+            </div>
+            
+            <!-- Profile Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <h1 class="text-2xl font-roboto text-gray-950 @md:text-2xl/10 dark:text-white mb-1">{{ profileData.name }}</h1>
+              <p class="text-sm font-roboto text-gray-500 mb-4">{{ profileData.profession }}</p>
+              <p class="text-base text-gray-600 font-roboto mb-4">{{ profileData.short_about }}</p>
+              
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-2">
+                <span *ngFor="let tag of profileData.tags" 
+                      class="px-3 py-1 bg-gray-200 text-gray-600 font-roboto  font-extralight text-xs rounded-full">
+                  {{ tag }}
+                </span>
+              </div>
+            </div>
+            
+            <!-- Location -->
+            <div class="text-xs font-roboto text-gray-500">
+              {{ profileData.current_location }}
+            </div>
+          </div>
+        </div>
+        <!-- Contact Menu -->
+        <div *ngIf="profileData && !isLoading" class="absolute -right-16 flex flex-col items-center gap-3 w-16">
+          <a *ngFor="let contact of profileData.contacts" 
+            [href]="contact.link" 
+            class="w-10 h-10 bg-gray-100 hover:bg-gray-200 border border-black/[0.1] hover:border-black/[0.2] rounded-sm flex items-center justify-center transition-colors">
+            <img [src]="contact.image" [alt]="contact.label" class="p-1">
+          </a>
+        </div>
+      </div>
+      
+      <div></div>
+    </div>
+
+    <!-- Sub-pages: Earlier Contains MenuBar - explains name -->
+    <app-menu class="w-full"></app-menu>
+
   </div>
 
   

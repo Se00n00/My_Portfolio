@@ -7,6 +7,7 @@ interface Project {
   description: string;
   links: { icon: string; text: string }[];
   techstack: { icon: string; stack_label: string; color:string }[];
+  project_images: {images: string}[];
   keywords: string[];
 }
 
