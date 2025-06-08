@@ -1,5 +1,6 @@
 <div class="profile_page flex h-full items-center justify-center">
   <div class="sub_profile_page flex flex-col items-center relative lg:w-[65vw]">
+    
     <!-- Loading State -->
     <div *ngIf="isLoading" class="flex justify-center items-center h-64">
       <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-500"></div>
@@ -58,7 +59,7 @@
               <!-- Tags -->
               <div class="flex flex-wrap gap-2">
                 <span *ngFor="let tag of profileData.tags" 
-                      class="px-3 py-1 bg-gray-200 text-gray-600 font-roboto  font-extralight text-xs rounded-full">
+                      class="px-2 py-1 bg-gray-200 text-gray-600 font-roboto  font-extralight text-xs rounded-lg">
                   {{ tag }}
                 </span>
               </div>

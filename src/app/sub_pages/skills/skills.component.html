@@ -1,28 +1,31 @@
-<div id="skills_subpage">
-    <div class="flex justify-between">
-        <h2 class=" font-normal text-lg  mb-2 uppercase">Skills</h2>
-    </div>
-
-    <p class="font-light text-black/[0.8] mb-4">
-        Here are some of the key skills I possess, reflecting my expertise, experience, and dedication to delivering high-quality results across various projects and professional environments.
-    </p>
-
-    <div class="grid grid-cols-2 space-x-6 m-5">
-        <div *ngFor="let group of skillsData" class="flex items-center justify-between bg-white p-2 rounded-xl shadow hover:shadow-md transition-all border border-gray-200 group">
-           
-            <h3 class="font-extralight text-gray-900 group-hover:text-blue-700 uppercase transition">{{ group.skill_title }}</h3>
-            
-            <div class="flex space-x-1">
-                <div *ngFor="let skill of group.skills" class="flex items-center flex-row space-x-4">
-                    <div class="w-10 h-10 rounded-lg flex items-center justify-center"
-                        [ngStyle]="{ 'background-color': skill.color + '20' }" [title]="skill.skill_lable">
-                        <img [src]="'assets/' + skill.skill_icon" alt=" " class="w-6 h-6">
+<div id="skills_subpage" class="bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
+    <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
+        <div class="flex justify-between">
+            <h2 class="font-normal font-roboto text-lg  mb-2 uppercase">Skills</h2>
+        </div>
+    
+        <p class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
+            Here are some of the key skills I possess, reflecting my expertise, experience, and dedication to delivering high-quality results across various projects and professional environments.
+        </p>
+    
+        <div class="grid grid-cols-2 gap-x-2 space-y-2 m-5">
+            <div *ngFor="let group of skillsData" class="flex items-center justify-between bg-slate-950/[0.05] p-2 rounded-xl transition-all border border-black/[0.05] group">
+               
+                <h3 class="font-light text-sm font-roboto uppercase transition">{{ group.skill_title }}</h3>
+                
+                <div class="flex space-x-1">
+                    <div *ngFor="let skill of group.skills" class="flex items-center flex-row space-x-4">
+                        <div class="w-10 h-10 rounded-lg flex items-center justify-center"
+                            [ngStyle]="{ 'background-color': skill.color}" [title]="skill.skill_lable">
+                            <img [src]="'assets/' + skill.skill_icon" alt=" " class="w-6 h-6">
+                        </div>
                     </div>
                 </div>
+                
             </div>
-            
         </div>
     </div>
+    
       
 </div>
 

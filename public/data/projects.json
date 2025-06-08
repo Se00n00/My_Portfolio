@@ -1,11 +1,18 @@
 [
   {
     "title": "My Project Title",
+    "label": "CORE",
     "description": "This is a brief description of the project.",
     "links": [
       {
-        "icon": "project_icon/github",
-        "text": "View Code on Github"
+        "icon": "project_icon/github.svg",
+        "link": "link/to/project",
+        "text": "Code"
+      },
+      {
+        "icon": "project_icon/github.svg",
+        "link": "link/to/project2",
+        "text": "Code"
       }
     ],
     "techstack": [
@@ -18,14 +25,16 @@
     "project_images": [
       "a.jpg"
     ],
-    "keywords":["AlexNet","Transformer"]
+    "keywords":["AlexNet","Transformer","AlexNet","Transformer"]
   },
   {
     "title": "My Project Title",
+    "label": "CORE",
     "description": "This project is my personal space where i implement concepts learned in college and build things from scratch in c. it covers various topics including random tasks like video extraction and elevator logic, as well as data structures like stacks, queues, and different types of linked lists. it's a hands-on way to apply course knowledge to real coding challenges. ",
     "links": [
       {
         "icon": "project_icon/github",
+        "link": "link/to/project1",
         "text": "View Code on Github"
       }
     ],
@@ -37,7 +46,6 @@
       }
     ],
     "project_images": [
-      "a.jpg"
     ],
     "keywords":["AlexNet","Transformer"]
   }      

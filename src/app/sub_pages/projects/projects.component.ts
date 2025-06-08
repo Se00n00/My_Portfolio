@@ -4,8 +4,9 @@ import { CommonModule } from '@angular/common';
 
 interface Project {
   title: string;
+  label: string;
   description: string;
-  links: { icon: string; text: string }[];
+  links: { icon: string; link:string; text: string }[];
   techstack: { icon: string; stack_label: string; color:string }[];
   project_images: {images: string}[];
   keywords: string[];

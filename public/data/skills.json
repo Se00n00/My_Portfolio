@@ -2,15 +2,36 @@
   {
     "skill_title": "Database",
     "skills": [
-      { "skill_icon": "skills_icon/mongodb.svg", "skill_lable": "MongoDB", "color": "#00FF00" },
-      { "skill_icon": "skills_icon/mysql.svg", "skill_lable": "MySQL", "color": "#00758F" }
+      { "skill_icon": "skills_icon/mongodb.svg", "skill_lable": "MongoDB", "color": "#00FF0040" },
+      { "skill_icon": "skills_icon/mysql.svg", "skill_lable": "MySQL", "color": "#00758F40" }
     ]
   },
   {
     "skill_title": "Frontend",
     "skills": [
-      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD0031" },
-      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB" }
+      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
+      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+    ]
+  },
+  {
+    "skill_title": "Frontend",
+    "skills": [
+      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
+      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+    ]
+  },
+  {
+    "skill_title": "Frontend",
+    "skills": [
+      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
+      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
+    ]
+  },
+  {
+    "skill_title": "Frontend",
+    "skills": [
+      { "skill_icon": "skills_icon/angular.svg", "skill_lable": "Angular", "color": "#DD003140" },
+      { "skill_icon": "skills_icon/react.svg", "skill_lable": "React", "color": "#61DAFB40" }
     ]
   }
 ]

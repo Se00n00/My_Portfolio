@@ -28,8 +28,8 @@ interface Contact {
 export class ProfileComponent implements OnInit {
   menu = [
     {"links":"about_subpage", "title":"About"},
-    {"links":"blogs_subpage", "title":"Blogs"},
     {"links":"projects_subpage", "title":"Projects"},
+    {"links":"blogs_subpage", "title":"Blogs"},
     {"links":"skills_subpage", "title":"Skills"}
   ]
   
