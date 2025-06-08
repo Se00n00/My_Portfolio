@@ -21,15 +21,15 @@
         rel="noopener noreferrer"
         class="flex items-center justify-between bg-white p-2 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-200 group">
         
-        <div class="flex flex-row space-x-4 w-full">
-          <img [src]="blog.icon" alt="icon" class="w-50 rounded-xl">
+        <div class="flex flex-col md:flex-row space-x-4 space-y-4 md:space-y-0 w-full">
+          <img [src]="blog.icon" alt="icon" class="md:w-50 rounded-xl">
 
           <div class="flex flex-col space-x-2 space-y-5 w-full">
             <div class="flex justify-between w-full">
 
               <div class="flex justify-center items-center">
                 <h3 class="font-extralight font-roboto text-gray-900 text-sm group-hover:text-blue-700 transition">{{ blog.title }}</h3>
-                <span class="text-[10px] mx-1 h-max w-max uppercase tracking-wide font-light font-roboto bg-gray-100 text-gray-600 px-2 py-1 rounded-lg mt-1 inline-block">
+                <span class="text-[10px] h-max w-max uppercase tracking-wide font-light text-nowrap font-roboto bg-gray-100 text-gray-600 px-2 py-1 rounded-lg inline-block">
                   {{ blog.label }}
                 </span>
               </div>

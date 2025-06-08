@@ -17,7 +17,7 @@
 
   <!-- PROJECTS CONTENTS STARTS FROM HERE-->
   <div class="project_content space-y-10">
-    <div *ngFor="let project of projects" class="flex flex-col sm:flex-row gap-5">
+    <div *ngFor="let project of projects" class="flex flex-col md:flex-row gap-5">
       
       <!-- Project Info -->
       <div class="flex-1">
@@ -47,7 +47,7 @@
             <div class="images lg:flex-1 w-full mt-2 flex gap-10 flex-nowrap bg-slate-950/[0.05] border-black/[0.05] border rounded-lg p-1">
               @for (images of project.project_images; track $index) {
                 <a [href]="project.links[0].link">
-                  <img [src]="images" class="h-full w-full box bg-black/[0.2] saturate-0 hover:saturate-100 hover:scale-[0.99] rounded-lg transition-all">
+                  <img [src]="images" class="h-full w-full bg-black/[0.2] saturate-0 hover:saturate-100 hover:scale-[0.99] rounded-lg transition-all">
                 </a>
               }
             </div>
@@ -59,7 +59,7 @@
       </div>
 
       <!-- Tech stack and Keywords -->
-      <div class="sm:flex-[0.2]">
+      <div class="flex-1 md:flex-[0.2]">
 
         <div class="flex items-center justify-between bg-white p-2 rounded-xl  border border-gray-300 group">
           
