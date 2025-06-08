@@ -1,0 +1,70 @@
+[
+  {
+    "title": "CNN-Using-Java-ND4J",
+    "label": "DEEP LEARNING",
+    "description_points": ["Developed and implemented a convolutional neural network using ND4J (for efficient tensor operations) featuring a scalable CNN framework supporting multiple layers.", "Achieved 83.3% training accuracy on CIFAR-10 Dataset.", "Implemented convolutional, max-pooling, average-pooling, and dense layers from scratch."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/CNN-Using-Java-ND4J",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/java.webp", "skill_label": "Java", "color": "#C3551760" }
+    ],
+    "project_images": [],
+    "keywords":["CNN", "ND4J"]
+  },
+  {
+    "title": "Pokemon_info",
+    "label": "WEB DEVELOPMENT",
+    "description_points": [],
+    "description": "Pokémon Info is a web application that fetches and displays detailed information about Pokémon using the PokéAPI. This project allows users to search for Pokémon by name or ID and retrieve key details such as type, abilities, stats, and more.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/pokemon_info",
+        "text": "Code"
+      },
+      {
+        "icon": "live",
+        "link": "https://se00n00.github.io/pokemon_info/",
+        "text": "Live"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
+    ],
+    "project_images": [],
+    "keywords":[]
+  },
+  {
+    "title": "Personal Blog",
+    "label": "WEB DEVELOPMENT",
+    "description_points":[],
+    "description": "Blogs from my intrests",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/Personal-Blog",
+        "text": "Code"
+      },
+      {
+        "icon": "live",
+        "link": "https://se00n00.github.io/Personal-Blog/",
+        "text": "Live"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
+    ],
+    "project_images": [],
+    "keywords":[]
+  }
+]
