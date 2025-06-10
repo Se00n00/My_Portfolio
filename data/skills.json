@@ -11,7 +11,8 @@
     "skills": [
       { "skill_icon": "icons/skills_icon/css.png", "skill_label": "CSS", "color": "#1664A160" },
       { "skill_icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
-      { "skill_icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
+      { "skill_icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" },
+      { "skill_icon": "icons/skills_icon/tauri.png", "skill_label": "Tauri", "color": "#E9B12F60" }
     ]
   },
   {

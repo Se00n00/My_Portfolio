@@ -1,5 +1,94 @@
 [
   {
+    "title": "NLP_Collection",
+    "label": "DEEP LEARNING",
+    "description_points": [],
+    "description": " This GitHub repository contains implementations of a wide range of NLP tasks, offering a comprehensive guide and reference to explore natural language processing.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/NLP_Collection",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" },
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["Transformer","Text-Classfication","Machine Translation","Text-Generation","Named-Entity-Recognition","Question-Answering","Text-Summerization"]
+  },
+  {
+    "title": "Paper Implementation And Reviews",
+    "label": "DEEP LEARNING",
+    "description_points": [],
+    "description": "This project is dedicated to implementation and review of machine learning and deep learning papers ",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/Paper_Implementation_and_Reviews",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" },
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["AlexNet","Vgg19","ViT","Transformer"]
+  },
+  {
+    "title": "Sequence classification from scratch",
+    "label": "DEEP LEARNING",
+    "description_points": ["Build a Encoder based transformer-based emotion classification model built completely from scratch in PyTorch.","Trained and evaluated the model from scratch on the tweet dataset and achieved 65.5% accuracy with 60.3% F1-score.","Finetuned the model on the amazon_reviews dataset and achieved 89.1% accuracy with an 88.8% F1 score."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/Sequence_classification_from_scratch",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" },
+      { "icon": "icons/skills_icon/pandas.svg", "skill_label": "Pandas", "color": "#0B085260" },
+      { "icon": "icons/skills_icon/numpy.png", "skill_label": "Numpy", "color": "#4470C160" },
+      { "icon": "icons/skills_icon/matplotlib.svg", "skill_label": "Matplitlib", "color": "#E5C53160" },
+      { "icon": "icons/skills_icon/seaborn.svg", "skill_label": "Seaborn", "color": "#53759860" },
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["Pytorch","Transformer","Sentiment-Classification"]
+  },
+  {
+    "title": "Gene Expression Level Prediction",
+    "label": "DEEP LEARNING",
+    "description_points": ["Designed and implemented a Transformer-based deep learning model inspired by Perceiver and Enformer architectures to predict RNA expression levels from raw DNA sequence data.","Built custom attention mechanisms, encoders, and decoders to efficiently model long-range genomic interactions.","Achieved a 35% R²-score on held-out test data, demonstrating effective modeling of gene expression patterns from sequence context."],
+    "description": "This project implements a Transformer-based architecture from the ground up, including custom attention layers, encoders, decoders, and XAI (Explainable AI) components. Designed for learning, experimentation, and transparency for predicting gene expression levels.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/GeneExpressionLevelPrediction",
+        "text": "Code"
+      },
+      {
+        "icon": "live",
+        "link": "https://se00n00.github.io/BD/",
+        "text": "Live"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" },
+      { "icon": "icons/skills_icon/pandas.svg", "skill_label": "Pandas", "color": "#0B085260" },
+      { "icon": "icons/skills_icon/numpy.png", "skill_label": "Numpy", "color": "#4470C160" },
+      { "icon": "icons/skills_icon/matplotlib.svg", "skill_label": "Matplitlib", "color": "#E5C53160" },
+      { "icon": "icons/skills_icon/seaborn.svg", "skill_label": "Seaborn", "color": "#53759860" },
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["RNA-Sequencing", "Deep Learning","Gene Expression Modeling","Transformer","Protein Sequencing"]
+  },
+  {
     "title": "CNN-Using-Java-ND4J",
     "label": "DEEP LEARNING",
     "description_points": ["Developed and implemented a convolutional neural network using ND4J (for efficient tensor operations) featuring a scalable CNN framework supporting multiple layers.", "Achieved 83.3% training accuracy on CIFAR-10 Dataset.", "Implemented convolutional, max-pooling, average-pooling, and dense layers from scratch."],
@@ -39,7 +128,7 @@
       { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
       { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
     ],
-    "project_images": [],
+    "project_images": ["icons/project_images/pokemon.png"],
     "keywords":[]
   },
   {
@@ -63,6 +152,101 @@
       { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
       { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
       { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
+    ],
+    "project_images": ["icons/project_images/blogs.png"],
+    "keywords":[]
+  },
+  {
+    "title": "Digit Classification",
+    "label": "MACHINE LEARNING",
+    "description_points":[],
+    "description": "This mini project is a simple implementation of Feed Forward Network(FFD) and Convolutional Neural Network(CNN) Model of Neural Netowrk for classification of Handwritten MNIST Digit Dataset.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/VML",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/tensorflow.png", "skill_label": "Tensorflow", "color": "#D3822560" },
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": ["icons/project_images/mnist.png"],
+    "keywords":["MNIST", "ANN", "CNN"]
+  },
+  {
+    "title": "VML",
+    "label": "MACHINE LEARNING",
+    "description_points":[],
+    "description": " Visuallized Machine Learning package for visuallization and implementation of machine learning algorithms.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/VML",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":[]
+  },
+  {
+    "title": "Ideate",
+    "label": "APP DEVELOPMENT",
+    "description_points":[],
+    "description": "A Cross-Platform application used to store One’s Idea, allows updation, sharing with more personalized experience.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/Ideate",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" },
+      { "icon": "icons/skills_icon/tauri.png", "skill_label": "Tauri", "color": "#E9B12F60" }
+    ],
+    "project_images": [],
+    "keywords":[]
+  },
+  {
+    "title": "CryptographicEquations",
+    "label": "CORE",
+    "description_points":[],
+    "description": "A mini project with consists of implementations of classical cryptographic functions in C.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/CryptographicEquations",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/c.png", "skill_label": "C", "color": "#21348460" }
+    ],
+    "project_images": [],
+    "keywords":["Subsitution Ciphers", "Transposition Ciphers"]
+  },
+  {
+    "title": "Calculator",
+    "label": "APP DEVELOPMENT",
+    "description_points":[],
+    "description": "A mini project about a cross-platform calculator app with basic functions.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/calculator/tree/main",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" }
     ],
     "project_images": [],
     "keywords":[]
