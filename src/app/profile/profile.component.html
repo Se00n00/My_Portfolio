@@ -37,48 +37,72 @@
     </div>
 
     <!-- Profile Card & Contact Menu -->
-    <div id="home" class="flex flex-col w-full h-[90vh] mb-[5vh] justify-between">
+    <div id="home" class="flex flex-col w-full min-h-[85vh] justify-between">
       <div></div>
 
       <div class="flex flex-col sm:flex-row bg-slate-950/[0.05] rounded-sm p-2 border-1 border-black/[0.05]">
-        <div *ngIf="profileData && !isLoading" class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] w-full rounded-xl border-1 transition-all">
-          <div class="flex flex-col md:flex-row items-start p-6 space-y-2"> <!--Small <-> Large Screen-->
-            
-            <!-- Profile Image -->
-            <div class="mr-6 w-full md:w-auto">
-              @if (profileData.profile_image != " ") {
-                <div class="w-full md:w-[30vw] lg:w-[15vw] aspect-square bg-black/[0.4] rounded-md transition-all">
-                  <img [src]="profileData.profile_image" alt=" " class="w-full h-full object-cover saturate-0">
-                </div>
-              }
+        
+        <div class="flex flex-col gap-2">
+          <!-- Profile card  -->
+          <div *ngIf="profileData && !isLoading" class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] w-full rounded-xl border-1 transition-all">
+            <div class="flex flex-col md:flex-row items-start p-6 space-y-2"> <!--Small <-> Large Screen-->
               
-            </div>
-            
-            <!-- Profile Info -->
-            <div class="flex-1 flex flex-col justify-between">
-              <div class="flex justify-between items-center">
-                <h1 class="text-2xl font-roboto text-gray-950 @md:text-2xl/10 mb-1">{{ profileData.name }}</h1>
-                <!-- Location -->
-                <div class="text-xs font-roboto text-gray-500">
-                  {{ profileData.current_location }}
-                </div>
+              <!-- Profile Image -->
+              <div class="mr-6 w-full md:w-auto">
+                @if (profileData.profile_image != " ") {
+                  <div class="w-full md:w-[30vw] lg:w-[15vw] aspect-square bg-black/[0.4] rounded-md transition-all">
+                    <img [src]="profileData.profile_image" alt=" " class="w-full h-full object-cover saturate-0">
+                  </div>
+                }
+                
               </div>
               
-              <p class="text-sm font-roboto text-gray-500 mb-4">{{ profileData.profession }}</p>
-              <p class="text-base text-gray-600 font-roboto mb-4">{{ profileData.short_about }}</p>
-              
-              <!-- Tags -->
-              <div class="flex flex-wrap gap-2">
-                <span *ngFor="let tag of profileData.tags" 
-                      class="px-2 py-1 bg-gray-200 text-gray-600 font-roboto  font-extralight text-xs rounded-lg">
-                  {{ tag }}
-                </span>
-              </div>
-            </div>
-            
+              <!-- Profile Info -->
+              <div class="flex-1 flex flex-col justify-between">
+                <div class="flex justify-between items-center">
+                  <h1 class="text-2xl font-roboto text-gray-950 @md:text-2xl/10 mb-1">{{ profileData.name }}</h1>
+                  <!-- Location -->
+                  <div class="text-xs font-roboto text-gray-500">
+                    {{ profileData.current_location }}
+                  </div>
+                </div>
+                
+                <p class="text-xs font-roboto text-gray-500 mb-4">{{ profileData.profession }}</p>
+                <p class="text-sm text-gray-600 font-roboto mb-4">{{ profileData.short_about }}</p>
+                
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-2">
+                  <span *ngFor="let tag of profileData.tags" 
+                        class="px-2 py-1 bg-gray-200 text-gray-600 font-roboto  font-extralight text-xs rounded-lg">
+                    {{ tag }}
+                  </span>
+                </div>
 
+                <!-- Github and other statistics ...  -->
+                <div class="flex max-w-[80vw] sm:max-w-[68vw] md:max-w-[40vw] xl:max-w-[42vw] gap-1 overflow-x-scroll my-4 rounded-lgg">
+                  <div *ngFor="let week of weeks;track $index" class="flex flex-col gap-1">
+                    <div *ngFor="let day of week" class="w-3 h-3 rounded-[2px] transition"
+                      [ngClass]="{
+                        'bg-black/[0.1]': day.level === 0,
+                        'bg-black/[0.3]': day.level === 1,
+                        'bg-black/[0.5]': day.level === 2,
+                        'bg-black/[0.7]': day.level === 3,
+                        'bg-black/[0.9]': day.level === 4
+                      }"
+                      [title]="day.date + ': ' + day.count + ' contributions'"
+                    ></div>
+                  </div>
+                </div>
+                
+
+              </div>
+              
+
+            </div>
           </div>
+
         </div>
+        
 
         <!-- Contact Menu -->
         <div *ngIf="profileData && !isLoading" class="w-full sm:w-16 sm:absolute -right-16 mt-2 sm:mt-0 flex flex-row sm:flex-col items-center gap-3">
@@ -93,6 +117,7 @@
       <div></div>
     </div>
 
+    <div class="flex justify-center items-center font-roboto font-extralight text-black/[0.8] my-5 animate-pulse">Scroll Down</div>
     <!-- Sub-pages: Earlier Contains MenuBar - explains name -->
     <app-menu class="w-full"></app-menu>
 

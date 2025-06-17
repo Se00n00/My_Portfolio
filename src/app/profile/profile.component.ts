@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from '../menu/menu.component';
 
@@ -19,6 +19,12 @@ interface Contact {
   label: string;
 }
 
+interface DayContribution {
+  date: string;
+  count: number;
+  level: number;
+}
+
 @Component({
   selector: 'app-profile',
   imports: [CommonModule, MenuComponent],
@@ -32,15 +38,21 @@ export class ProfileComponent implements OnInit {
     {"links":"blogs_subpage", "title":"Blogs"},
     {"links":"skills_subpage", "title":"Skills"}
   ]
+  skillsData: any[] = [];
   
   profileData: ProfileData | null = null;
   isLoading = true;
   error = false;
+  weeks: DayContribution[][] = [];
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.loadProfileData();
+    this.http.get<any[]>('data/skills.json').subscribe(data => {
+      this.skillsData = data;
+    });
+    this.fetchContributions('se00n00');
   }
 
   scrollTo(id_reference: string) {
@@ -73,6 +85,71 @@ export class ProfileComponent implements OnInit {
           this.error = true;
         }
       });
+  }
+  formatContributions(data: any): DayContribution[][] {
+    const today = new Date();
+    const contributions = data.contributions;
+
+    // Filter only 2024 and 2025, and exclude future dates
+    const filtered = contributions.filter((c: any) => {
+      const date = new Date(c.date);
+      const year = date.getFullYear();
+
+      return (year === 2024 || year === 2025) && date <= today;
+    });
+
+    // Sort: 2024 first, then 2025, ascending within each year
+    filtered.sort((a: any, b: any) => {
+      const yearA = new Date(a.date).getFullYear();
+      const yearB = new Date(b.date).getFullYear();
+
+      if (yearA !== yearB) return yearA === 2024 ? -1 : 1;
+      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    });
+
+    // Group into weeks
+    const weeks: DayContribution[][] = [];
+    let currentWeek: DayContribution[] = [];
+
+    filtered.forEach((day: any) => {
+      currentWeek.push({
+        date: day.date,
+        count: day.count,
+        level: this.getLevel(day.count)
+      });
+
+      if (currentWeek.length === 7) {
+        weeks.push(currentWeek);
+        currentWeek = [];
+      }
+    });
+
+    if (currentWeek.length > 0) {
+      weeks.push(currentWeek);
+    }
+
+    return weeks;
+  }
+
+  fetchContributions(username: string) {
+    this.http.get<any>(`https://github-contributions-api.jogruber.de/v4/${username}`)
+      .subscribe({
+        next: (res) => {
+          this.weeks = this.formatContributions(res);
+        },
+        error: (err) => {
+          console.error('Error fetching contributions', err);
+          this.error = true;
+        }
+      });
+  }
+
+  getLevel(count: number): number {
+    if (count === 0) return 0;
+    if (count < 2) return 1;
+    if (count < 4) return 2;
+    if (count < 6) return 3;
+    return 4;
   }
   
 }
