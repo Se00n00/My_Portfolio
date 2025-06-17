@@ -172,7 +172,11 @@
       { "icon": "icons/skills_icon/tensorflow.png", "skill_label": "Tensorflow", "color": "#D3822560" },
       { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
     ],
+<<<<<<< HEAD
     "project_images": ["icons/project_images/mnist.png"],
+=======
+    "project_images": [],
+>>>>>>> d7e271a (added github activity calender)
     "keywords":["MNIST", "ANN", "CNN"]
   },
   {
