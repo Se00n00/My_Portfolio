@@ -1,5 +1,7 @@
-<div id="about_subpage" class="bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
-  <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
+<div id="about_subpage" class="flex flex-col sm:flex-row gap-2 bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
+  
+  <!-- About Me  -->
+  <div class="flex-1 bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
     
     <h2 class=" font-roboto text-lg  mb-2 uppercase">About Me</h2>
     <p *ngFor="let paragraph of aboutMe" class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
@@ -7,4 +9,28 @@
     </p>
   
   </div>
+
+  <!-- Quotes and Experience -->
+  <div class="flex-[0.3] flex flex-col md:flex-row gap-2">
+    
+    <!-- <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
+      <h2 class=" font-roboto text-lg  mb-2 uppercase">Experience</h2>
+      <p class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
+        NASSCOM 
+      </p>
+      <p class="text-end">
+        ---- Me
+      </p>
+    </div> -->
+    <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
+      <p class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
+        Why dwell into applications! when there is so much to learn about the theory
+      </p>
+      <p class="text-end">
+        ---- Me
+      </p>
+    </div>
+  </div>
+
+  
 </div>
