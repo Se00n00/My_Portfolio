@@ -12,11 +12,11 @@
     </div>
 
     <!-- MENU BAR -->
-    <div class="menu_bar z-10 sticky top-10 flex w-full sm:px-10 gap-5 flex-row items-center justify-between bg-transparent backdrop-blur-lg p-1 rounded-xl shadow-2xl hover:shadow-md transition-all border border-gray-200">
+    <div class="menu_bar z-10 sticky top-10 flex w-full sm:px-5 gap-5 flex-row items-center justify-between bg-transparent backdrop-blur-lg p-1 rounded-xl shadow-2xl hover:shadow-md transition-all border border-gray-200">
     
       <!-- Swipe Hint -->
       <div class="flex items-center text-gray-400 text-sm font-roboto font-light cursor-pointer" (click)="scrollTo('home')">
-        <img src="favicon.svg" class="h-8 md:-left-5 relative">
+        <img src="favicon.svg" class="h-8 md:-left-2 relative">
         <p class="hidden md:flex m-0 p-0">
           Swipe Down or Click on menu >
         </p>
@@ -32,6 +32,8 @@
             </h3>
           </div>
         </div>
+
+        <!-- <img src="project_icon/ghost.svg" alt=" " class="h-8" (click)="toggleDarkMode()"> -->
       </div>
     
     </div>
@@ -111,6 +113,9 @@
             class="w-10 h-10 bg-gray-100 hover:bg-gray-200 border border-black/[0.1] hover:border-black/[0.2] rounded-sm flex items-center justify-center transition-colors">
             <img [src]="contact.image" [alt]="contact.label" class="p-1">
           </a>
+          <div (click)="shareWeb()" class="w-10 h-10 cursor-pointer bg-gray-100 hover:bg-gray-200 border border-black/[0.1] hover:border-black/[0.2] rounded-sm flex items-center justify-center transition-colors">
+            <img src="project_icon/share.svg" alt=" " class="p-1">
+        </div>
         </div>
       </div>
       
