@@ -1,4 +1,4 @@
-<div id="blogs_subpage" class="bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
+<div id="blogs_subpage" class="flex flex-col gap-2 bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
   <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
     
     <div class="flex justify-between">
@@ -9,10 +9,14 @@
         </a>
       </div>
     </div>
+  
 
-    <p class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
+    <p class="font-extralight font-roboto text-[15px] text-black/[0.8]">
       Here are some blogs that detail my experiences, insights, and lessons learned throughout my journey
     </p>
+
+  </div>
+  <div>
 
     <div *ngIf="blogs.length; else loading" class="space-y-6">
       <a *ngFor="let blog of blogs"

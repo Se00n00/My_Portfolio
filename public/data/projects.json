@@ -107,6 +107,31 @@
     "keywords":["CNN", "ND4J"]
   },
   {
+    "title": "Bluesky_portfolio",
+    "label": "WEB DEVELOPMENT",
+    "description_points": [],
+    "description": "Portfolio website built using Angular and Tailwind CSS, showcasing freelancing projects.",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/bluesky_portfolio",
+        "text": "Code"
+      },
+      {
+        "icon": "live",
+        "link": "https://se00n00.github.io/bluesky_portfolio/",
+        "text": "Live"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
+      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
+      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
+    ],
+    "project_images": ["icons/project_images/bluesky.png"],
+    "keywords":[]
+  },
+  {
     "title": "Pokemon_info",
     "label": "WEB DEVELOPMENT",
     "description_points": [],

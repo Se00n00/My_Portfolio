@@ -1,15 +1,18 @@
-<div id="skills_subpage" class="bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
+<div id="skills_subpage" class="flex flex-col gap-2 bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
     <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
         <div class="flex justify-between">
             <h2 class="font-normal font-roboto text-lg  mb-2 uppercase">Skills</h2>
         </div>
     
-        <p class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
+        <p class="font-extralight font-roboto text-[15px] text-black/[0.8]">
             Here are some of the key skills I possess, reflecting my expertise, experience, and dedication to delivering high-quality results across various projects and professional environments.
         </p>
+
+    </div>
+    <div>
     
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-2 gap-y-2 m-5">
-            <div *ngFor="let group of skillsData" class="flex items-center justify-between bg-slate-950/[0.05] p-2 rounded-xl transition-all border border-black/[0.05] group">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-2 gap-y-2">
+            <div *ngFor="let group of skillsData" class="relative hover:z-10 flex items-center justify-between bg-white shadow hover:shadow-2xl hover:shadow-black shadow-black/[0.01] transition-all border border-gray-200 p-2 rounded-xl group">
                
                 <h3 class="font-light text-sm font-roboto uppercase transition">{{ group.skill_title }}</h3>
                 
