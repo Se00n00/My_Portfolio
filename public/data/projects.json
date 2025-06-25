@@ -128,7 +128,7 @@
       { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
       { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
     ],
-    "project_images": ["icons/project_images/bluesky.png"],
+    "project_images": ["icons/project_images/newbluesky.png"],
     "keywords":[]
   },
   {
