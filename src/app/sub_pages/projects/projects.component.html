@@ -14,6 +14,17 @@
       Here’s a quick look at some of my recent projects, showcasing a mix of creativity, problem-solving, and technical skills across various domains and platforms.
     </p>
   </div>
+
+  <!-- Filter Projects  -->
+  <div class="bg-black/[0.1] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-1 rounded-md border-1 flex flex-col gap-2 flex-wrap sm:flex-row items-center justify-between font-roboto">
+    <span class="font-light text-xs ml-2">Projects > {{projects.length}}</span>
+    <div class="text-xs font-light flex gap-2 flex-wrap">
+      <span (click)="filterData('ALL')" class="w-max bg-white/[0.9] hover:bg-black/[0.8] hover:text-white border-black/[0.3] hover:border-black/[0.5] rounded-md px-2 py-1 border-1 transition-all cursor-pointer">ALL</span>
+      @for (item of project_types; track $index) {
+        <span (click)="filterData(item)" class="w-max bg-white/[0.9] hover:bg-black/[0.8] hover:text-white border-black/[0.3] hover:border-black/[0.5] rounded-md px-2 py-1 border-1 transition-all cursor-pointer">{{item}}</span>
+      }
+    </div>
+  </div>
 <div>
   <!-- PROJECTS CONTENTS STARTS FROM HERE-->
   <div class="project_content space-y-2">
@@ -68,7 +79,7 @@
           @if (project.project_images.length > 0) {
             <div class="images lg:flex-1 w-full mt-2 flex gap-10 flex-nowrap bg-slate-950/[0.05] border-black/[0.05] border rounded-lg p-1">
               @for (images of project.project_images; track $index) {
-                <a [href]="project.links[0].link">
+                <a [href]="project.links[1].link">
                   <img [src]="images" class="h-full w-full bg-black/[0.2] saturate-0 hover:saturate-100 hover:scale-[0.99] rounded-lg transition-all">
                 </a>
               }
@@ -85,11 +96,11 @@
 
         <div class="flex items-center justify-between p-2 rounded-xl  border bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3]">
           
-          <div class="flex w-max gap-1 items-center flex-wrap">
-              <div *ngFor="let tech of project.techstack" class="flex items-center flex-row space-x-4">
+          <div class="flex gap-1 items-center flex-wrap">
+              <div *ngFor="let tech of project.techstack" class="flex flex-wrap items-center flex-row space-x-4">
                   <div class="w-10 h-10 rounded-lg flex items-center justify-center"
-                      [ngStyle]="{ 'background-color': tech.color}" [title]="tech.stack_label">
-                      <img [src]="tech.icon" alt=" " class="w-6 h-6">
+                    [ngStyle]="{ 'background-color': tech.color}" [title]="tech.stack_label">
+                    <img [src]="tech.icon" alt=" " class="w-6 h-6">
                   </div>
               </div>
           </div>
