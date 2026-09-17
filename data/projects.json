@@ -1,5 +1,106 @@
 [
   {
+    "title": "TinyLM2-50M-Reasoning",
+    "label": "MACHINE LEARNING",
+    "description_points": ["Built a 50M decoder-only Transformer with ALiBi positional bias, RMSNorm, gated feedforward and tied embeddings (12 layers, 512 d-model, 2048 context), designed for edge-device chat and language-model research, with architecture ablations documented under experiments.", "Trained a 5-stage pipeline of pretraining on 4B tokens (FineWeb-Edu plus WikiText), instruction tuning on UltraChat 200k, reasoning fine-tuning on reasoning traces and tool calling on 2x T4 GPUs, with async streaming CLI inference.", "Evaluated the TinyLM2-R1 reasoning checkpoint with lm-eval under identical conditions, beating Supra-50M-Reasoning on BLiMP (0.7613), PIQA, COPA, BoolQ (0.6171), TruthfulQA and WikiText-2 perplexity (111 vs 166)."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/TinyLM",
+        "text": "Code"
+      },
+      {
+        "icon": "icons/skills_icon/huggingface.png",
+        "link": "https://huggingface.co/collections/Se00n00/tinylm2-50m",
+        "text": "Model"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" },
+      { "icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" },
+      { "icon": "icons/skills_icon/huggingface.png", "skill_label": "Huggingface", "color": "#E5C12160" }
+    ],
+    "project_images": [],
+    "keywords":["Reasoning","ALiBi","RFT","lm-eval","Edge-LLM"]
+  },
+  {
+    "title": "VoiceRT",
+    "label": "MACHINE LEARNING",
+    "description_points": ["Built a full voice loop (VAD, Whisper-base STT, Qwen3-0.6B LLM, Kokoro-82M TTS) running fully local on a single 4GB RTX 3050 laptop GPU with sub-second speech-in speech-out and no cloud.", "Implemented custom Triton fused kernels for Qwen, Whisper and Kokoro with exact torch fallbacks, plus a paged inference engine with continuous batching, prefix caching, chunked prefill and CUDA graphs, giving 24-53% kernel speedups at fp16 parity.", "Measured 14ms LLM TTFT, ~69 tok/s decode and 827ms end-to-end voice turn at ~1957MB VRAM, backed by 84 passing parity and budget tests."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/VoiceRT",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" },
+      { "icon": "icons/skills_icon/torch.png", "skill_label": "Pytorch", "color": "#D7472A60" }
+    ],
+    "project_images": [],
+    "keywords":["Voice-AI","Triton","Paged-Attention","Whisper","Qwen3","Kokoro"]
+  },
+  {
+    "title": "PaperRAG",
+    "youtube_id": "m9QMwHktHRo",
+    "label": "MACHINE LEARNING",
+    "description_points": ["Built a production-grade full-stack RAG application for answering queries over online research papers, exposing the pipeline as FastAPI endpoints with Docker deployment.", "Implemented a query router with step-back prompting, context-aware query decomposition, hybrid retrieval with redundancy filtering, cross-encoder reranking and grounded generation.", "Evaluated with RAGAS where Advanced RAG plus Hybrid Retrieval leads on correctness (0.285), relevance (0.837), coherence (0.993) and context recall (0.334) versus naive RAG."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/PaperRAG",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["RAG","LangGraph","Hybrid-Retrieval","Reranking","RAGAS","FastAPI"]
+  },
+  {
+    "title": "HyDRA - Hierarchical Deep Researcher Agent",
+    "youtube_id": "IuKkCtJ6tYI",
+    "label": "MACHINE LEARNING",
+    "description_points": ["Built HyDRA, a hierarchical deep research agent framework that separates planning, execution, research and synthesis into contract-driven agents running strict Action-to-Observation loops.", "Implemented a central Context Manager that validates, summarizes and minimizes every tool and agent output, plus a registry of web, archive and Python tools, keeping long-horizon runs robust to context exhaustion and malformed model JSON.", "Shipped a reproducible Docker and FastAPI backend with a chat UI and an evaluation suite for GAIA, SimpleQA and HLE benchmarks."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/Heirarchial-Deep-researcher-Agent",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["AI-Agents","Multi-Agent","Deep-Research","GAIA","Context-Management"]
+  },
+  {
+    "title": "LawAgent - News and Law Agent",
+    "youtube_id": "Aj6uJ9t6-YA",
+    "label": "MACHINE LEARNING",
+    "description_points": ["Built a News and Law agent on LangGraph with guardrail routing for normal, irrelevant and harmful queries, an orchestrator for complex tasks and specialized workers for government law, news, research papers and media.", "Implemented a worker pipeline of query synthesis, tool calls over DuckDuckGo and Semantic Scholar, MCP embedding curation with cosine retrieval and extraction, fused into a final answer plus summary.", "Shipped a FastAPI and Docker backend with card-wise outputs and error and guardrail handling, reproducible from an isolated virtual environment."],
+    "description": "",
+    "links": [
+      {
+        "icon": "project_icon/github.svg",
+        "link": "https://github.com/Se00n00/LawAgent",
+        "text": "Code"
+      }
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python", "color": "#036AA660" }
+    ],
+    "project_images": [],
+    "keywords":["AI-Agents","LangGraph","MCP","Legal-AI","FastAPI"]
+  },
+  {
     "title": "NLP_Collection",
     "label": "MACHINE LEARNING",
     "description_points": [],
@@ -39,6 +140,7 @@
   },
   {
     "title": "Sequence classification from scratch",
+    "youtube_id": "Nl3SReW8KgY",
     "label": "MACHINE LEARNING",
     "description_points": ["Build a Encoder based transformer-based emotion classification model built completely from scratch in PyTorch.","Trained and evaluated the model from scratch on the tweet dataset and achieved 65.5% accuracy with 60.3% F1-score.","Finetuned the model on the amazon_reviews dataset and achieved 89.1% accuracy with an 88.8% F1 score."],
     "description": "",
@@ -179,31 +281,6 @@
       { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
     ],
     "project_images": ["icons/project_images/blogs.png"],
-    "keywords":[]
-  },
-  {
-    "title": "Embeddb Web | Ongoing",
-    "label": "WEB DEVELOPMENT",
-    "description_points":[],
-    "description": "Web-Page of multi-dimensional Embeddb Database, designed to store N-dimensional Embeddings to power AI application and research.",
-    "links": [
-      {
-        "icon": "project_icon/github.svg",
-        "link": "https://github.com/Se00n00/embeddbweb",
-        "text": "Code"
-      },
-      {
-        "icon": "live",
-        "link": "https://se00n00.github.io/embeddbweb/",
-        "text": "Live"
-      }
-    ],
-    "techstack": [
-      { "icon": "icons/skills_icon/typescript.webp", "skill_label": "Typescript", "color": "#016BB160" },
-      { "icon": "icons/skills_icon/angular.webp", "skill_label": "Angular", "color": "#AA363260" },
-      { "icon": "icons/skills_icon/tailwind.png", "skill_label": "Tailwind", "color": "#2BA1D460" }
-    ],
-    "project_images": ["icons/project_images/embeddb.png"],
     "keywords":[]
   },
   {
