@@ -1,13 +1,21 @@
 {
-  "profile_image": " me",
+  "profile_image": "me_outlined.png",
   "name": "Mohit Kumar",
-  "short_about": "a Machine Learning Engineer Currently Pursuing my graduation through AIML specialization Course from UPES.",
-  "profession": "Machine Learning Engineer | Software Engineer",
-  "tags": ["Deep Learning", "Machine Learning", "NLP", "Computer Vision"],
-  "current_location": "Dehradun, Uttrakhand",
+  "short_about": "AI/ML Engineer building LLMs from scratch, inference systems, agentic AI, RAG, and production AI infrastructure with PyTorch, Triton, and FastAPI.",
+  "profession": "AI Engineer | LLM & AI Infrastructure",
+  "tags": [
+    "LLM Engineering",
+    "Model Training",
+    "Inference Systems",
+    "Agentic AI"
+  ],
+  "current_location": "Gaya, Bihar",
   "contacts": [
     {"image": "project_icon/github.svg", "link": "https://github.com/Se00n00", "label": "github"},
     {"image": "project_icon/linkedin.svg", "link": "https://www.linkedin.com/in/mohit-kumar-055126248/", "label": "linkedin"},
-    {"image": "project_icon/email.svg", "link": "mailto:bluesky5april2021@gmail.com", "label": "email"}
+    {"image": "project_icon/email.svg", "link": "mailto:mohit.kumar.builds@gmail.com", "label": "email"},
+    {"image": "project_icon/youtube.svg", "link": "https://www.youtube.com/@anantami2634", "label": "youtube"},
+    {"image": "project_icon/twitter.svg", "link": "https://x.com/Se00n001", "label": "twitter"},
+    {"image": "project_icon/huggingface.svg", "link": "https://huggingface.co/Se00n00", "label": "huggingface"}
   ]
 }

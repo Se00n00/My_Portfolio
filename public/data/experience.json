@@ -1,0 +1,27 @@
+[
+  {
+    "company": "PlanetAI",
+    "youtube_id": "SUrbNXhUo5M",
+    "role": "Full Stack AI Engineer",
+    "location": "Gurgaon, India",
+    "period": "Dec 2025 - May 2026",
+    "logo": "craon.svg",
+    "points": [
+      "Built a hierarchical multimodal multi-agent AI platform for conversational video editing, serving approximately 1,000 daily users, using Python, FastAPI, LangGraph, MCP, and SSE; coordinating 5 specialized agents, 20+ tools, and 10+ AI workflows.",
+      "Implemented a RAG pipeline with ChromaDB to retrieve relevant video context and metadata, enabling conversational querying over users' video content.",
+      "Designed and deployed production-grade asynchronous services and REST APIs with FastAPI, including reconnectable SSE streaming, concurrent execution, structured error recovery, and persistent conversational state.",
+      "Built a distributed FastMCP tool ecosystem integrating AI agents with 20+ production tools and external services for subtitle generation, timeline editing, audio enhancement, teaser generation, and multimodal color grading.",
+      "Engineered resilient agentic workflows with LangGraph, asynchronous tool orchestration, checkpointed execution, interrupt/resume support, and long-context memory compaction across 10+ workflow graphs.",
+      "Optimized service orchestration using persistent MCP sessions, MongoDB checkpointing, and concurrent caching, achieving approximately 400 ms agent-to-frontend streaming latency."
+    ],
+    "techstack": [
+      { "icon": "icons/skills_icon/python.png", "skill_label": "Python" },
+      { "icon": "icons/skills_icon/fastapi.svg", "skill_label": "FastAPI" },
+      { "icon": "icons/skills_icon/langgraph.svg", "skill_label": "LangGraph" },
+      { "icon": "", "skill_label": "MCP" },
+      { "icon": "", "skill_label": "SSE" },
+      { "icon": "icons/skills_icon/chromadb.png", "skill_label": "ChromaDB" },
+      { "icon": "icons/skills_icon/mongodb.webp", "skill_label": "MongoDB" }
+    ]
+  }
+]

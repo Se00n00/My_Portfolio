@@ -1,17 +1,17 @@
-<div id="blogs_subpage" class="flex flex-col gap-2 bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
-  <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
+<div id="blogs_subpage" class="flex flex-col gap-2 bg-slate-950/[0.05] dark:bg-white/[0.04] border-black/[0.05] dark:border-white/[0.08] rounded-sm p-2 border-1">
+  <div class="bg-white/[0.9] dark:bg-zinc-900/[0.9] hover:bg-white-50/[0.01] dark:hover:bg-white/[0.04] border-black/[0.2] dark:border-white/[0.12] hover:border-black/[0.3] dark:hover:border-white/[0.25] p-5 rounded-xl border-1">
     
     <div class="flex justify-between">
       <h2 class=" font-roboto text-lg  mb-2 uppercase">Blogs</h2>
-      <div class="bg-slate-950/[0.05] w-10 h-10 rounded-lg border hover:bg-gray-400/[0.2] border-black/[0.2] hover:border-black/[0.4] transition-all">
+      <div class="bg-slate-950/[0.05] dark:bg-white/[0.08] w-10 h-10 rounded-lg border hover:bg-gray-400/[0.2] dark:hover:bg-white/[0.15] border-black/[0.2] dark:border-white/[0.15] hover:border-black/[0.4] dark:hover:border-white/[0.3] transition-all">
         <a href="https://se00n00.github.io/Personal-Blog/" class="flex items-center justify-center h-full">
-          <img src="icons/blog_icon/circle.svg" alt=" " class="w-8">
+          <img src="icons/blog_icon/circle.svg" alt=" " class="w-8 dark:invert">
         </a>
       </div>
     </div>
   
 
-    <p class="font-extralight font-roboto text-[15px] text-black/[0.8]">
+    <p class="font-extralight font-roboto text-[15px] text-black/[0.8] dark:text-zinc-300">
       Here are some blogs that detail my experiences, insights, and lessons learned throughout my journey
     </p>
 
@@ -23,22 +23,22 @@
         [href]="blog.links"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex items-center justify-between bg-white p-2 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-200 group">
+        class="flex items-center justify-between bg-white dark:bg-zinc-900 p-2 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-200 dark:border-zinc-700 group min-w-0">
         
-        <div class="flex flex-col md:flex-row space-x-4 space-y-4 md:space-y-0 w-full">
-          <img [src]="blog.icon" alt="icon" class="md:w-50 rounded-xl object-cover">
+        <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 w-full min-w-0">
+          <img [src]="blog.icon" alt="icon" class="w-full md:w-50 max-w-full rounded-xl object-cover">
 
           <div class="flex flex-col space-x-2 space-y-5 w-full">
             <div class="flex justify-between w-full">
 
-              <div class="flex justify-center items-center">
-                <h3 class="font-extralight font-roboto text-gray-900 text-sm group-hover:text-blue-700 transition">{{ blog.title }}</h3>
-                <span class="text-[10px] h-max w-max uppercase tracking-wide font-light text-nowrap font-roboto bg-gray-100 text-gray-600 px-2 py-1 rounded-lg inline-block">
+              <div class="flex flex-wrap items-center gap-2 min-w-0">
+                <h3 class="font-extralight font-roboto text-gray-900 dark:text-zinc-100 text-sm group-hover:text-blue-700 dark:group-hover:text-blue-400 transition break-words">{{ blog.title }}</h3>
+                <span class="text-[10px] h-max w-max uppercase tracking-wide font-light text-nowrap font-roboto bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-zinc-300 px-2 py-1 rounded-lg inline-block">
                   {{ blog.label }}
                 </span>
               </div>
-              
-              <div class="text-gray-400 mr-2 text-xl group-hover:text-blue-600 transition">></div>
+
+              <div class="text-gray-400 dark:text-zinc-500 mr-2 text-xl group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">></div>
             </div>
 
             <p class="font-extralight text-xs font-roboto">{{blog.description}}</p>
@@ -50,7 +50,7 @@
     </div>
 
     <ng-template #loading>
-      <p class="text-center text-gray-500">Loading blogs...</p>
+      <p class="text-center text-gray-500 dark:text-zinc-400">Loading blogs...</p>
     </ng-template>
 
   </div>

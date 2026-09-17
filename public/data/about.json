@@ -1,6 +1,7 @@
 {
     "about_me" : [
-        "I’m Mohit, a 21-year-old Machine Learning Engineer and frontend developer with a passion for building intelligent machines and applications. I specialize in Generative AI, Transformers, NLP, and Visual Processing",
-        "Skilled in Python, Java, typescript and deep learning frameworks, I build scalable, high-performance systems. If you’re looking for someone to drive impactful projects, let’s connect! "
+      "I’m Mohit, a 21-year-old Machine Learning Engineer focused on building intelligent models and production-ready AI systems. I specialize in Generative AI, Transformers, NLP, LLMs, and AI inference.",
+      
+      "Skilled in Python, PyTorch, TypeScript, and modern AI infrastructure, I build scalable, high-performance systems spanning model training, agentic AI, and GPU-optimized inference. I’m particularly interested in taking AI systems from research and experimentation to efficient, real-world deployment."
     ]
 }

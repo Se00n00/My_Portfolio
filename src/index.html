@@ -11,6 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
   <script defer src="https://cloud.umami.is/script.js" data-website-id="21d34481-842e-48bc-82bd-a4e2a48e4b6b"></script>
+  <script>
+    // Dark is the default theme; saved preference still wins
+    document.documentElement.classList.add('dark');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light') document.documentElement.classList.remove('dark');
+    } catch (e) {}
+  </script>
 </head>
 <body>
   <app-root></app-root>

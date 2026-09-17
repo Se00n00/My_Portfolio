@@ -1,5 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+/* Icons and menus are non-selectable / non-draggable */
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
 @theme{
     --font-roboto: "Roboto Mono", monospace;
+}
+
+/* Class-based dark mode (toggled via .dark on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Base page colors for both modes + smooth theme transition */
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+body {
+  background-color: #fff;
+  color: var(--color-gray-900);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+html.dark body {
+  background-color: var(--color-zinc-950);
+  color: var(--color-zinc-100);
+}
+
+/* Keep long words from overflowing cards on small screens */
+p, h1, h2, h3, span, a {
+  overflow-wrap: break-word;
+  min-width: 0;
 }

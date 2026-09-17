@@ -1,13 +1,29 @@
-<div id="about_subpage" class="flex flex-col sm:flex-row gap-2 bg-slate-950/[0.05] border-black/[0.05] rounded-sm p-2 border-1">
-  
+<div id="about_subpage" class="flex flex-col sm:flex-row gap-2 bg-slate-950/[0.05] dark:bg-white/[0.04] border-black/[0.05] dark:border-white/[0.08] rounded-sm p-2 border-1">
+
   <!-- About Me  -->
-  <div class="flex-1 bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
-    
+  <div class="flex-1 bg-white/[0.9] dark:bg-zinc-900/[0.9] hover:bg-white-50/[0.01] dark:hover:bg-white/[0.04] border-black/[0.2] dark:border-white/[0.12] hover:border-black/[0.3] dark:hover:border-white/[0.25] p-5 rounded-xl border-1">
+
     <h2 class=" font-roboto text-lg  mb-2 uppercase">About Me</h2>
-    <p *ngFor="let paragraph of aboutMe" class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
+    <p *ngFor="let paragraph of aboutMe" class="font-extralight font-roboto text-[15px] text-black/[0.8] dark:text-zinc-300 mb-4">
       {{ paragraph }}
     </p>
-  
+
+    <h3 class="font-roboto text-lg mb-2 uppercase">Education</h3>
+    <div class="space-y-4 font-extralight font-roboto text-[15px] text-black/[0.8] dark:text-zinc-300">
+      <div class="grid grid-cols-1 min-[420px]:grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-1">
+        <p class="font-normal break-words">University of Petroleum and Energy Studies</p>
+        <p class="text-right text-gray-500 dark:text-zinc-400">2022&ndash;2026</p>
+        <p>B.Tech Computer Science Engineering [CGPA : 7.96/10.0]</p>
+        <p class="text-right">Uttarakhand, India</p>
+      </div>
+      <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-1">
+        <p class="font-normal">City Public School</p>
+        <p class="text-right text-gray-500 dark:text-zinc-400">Until 2022</p>
+        <p>Class II (mid-year) to Class XII</p>
+        <p class="text-right">Sikhar, Gaya</p>
+      </div>
+    </div>
+
   </div>
 
   <!-- Quotes and Experience -->
@@ -22,9 +38,9 @@
         ---- Me
       </p>
     </div> -->
-    <div class="bg-white/[0.9] hover:bg-white-50/[0.01] border-black/[0.2] hover:border-black/[0.3] p-5 rounded-xl border-1">
-      <p class="font-extralight font-roboto text-[15px] text-black/[0.8] mb-4">
-        Why dwell into applications! when there is so much to learn about the theory
+    <div class="bg-white/[0.9] dark:bg-zinc-900/[0.9] hover:bg-white-50/[0.01] dark:hover:bg-white/[0.04] border-black/[0.2] dark:border-white/[0.12] hover:border-black/[0.3] dark:hover:border-white/[0.25] p-5 rounded-xl border-1">
+      <p class="font-extralight font-roboto text-[15px] text-black/[0.8] dark:text-zinc-300 mb-4">
+        Why develv into applications ? when there is so much to learn about the theory !
       </p>
       <p class="text-end">
         ---- Me
