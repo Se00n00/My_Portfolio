@@ -1,9 +1,32 @@
 [
     {
+        "id": "d04e66e7-caba-4155-bd6a-7aa0108b3a71",
+        "title": "Decoding Strategies in LLMs",
+        "label": "DEEP LEARNING",
+        "category": "DEEP LEARNING",
+        "icon": "https://se00n00.github.io/Personal-Blog/firstblog/decodingStrategies.jpg",
+        "image": "firstblog/decodingStrategies.jpg",
+        "links": "https://se00n00.github.io/Personal-Blog/article/d04e66e7-caba-4155-bd6a-7aa0108b3a71",
+        "description": ""
+    },
+    {
+        "id": "40e88f87-e603-4b01-a9c1-bddb22fa4c56",
         "title": "An Intorduction to IT Regulations in India",
-        "links": "https://se00n00.github.io/Personal-Blog/article/2",
-        "label": "Cyber Security",
-        "icon": "icons/blog_icon/itact2000.png",
+        "label": "CYBER SECURITY",
+        "category": "CYBER SECURITY",
+        "icon": "https://se00n00.github.io/Personal-Blog/firstblog/itact2000.png",
+        "image": "firstblog/itact2000.png",
+        "links": "https://se00n00.github.io/Personal-Blog/article/40e88f87-e603-4b01-a9c1-bddb22fa4c56",
         "description": "An overview of the IT Act 2000 and related Indian legal frameworks addressing cybercrime, digital evidence, intermediary liability, and jurisdictional challenges. This article outlines key provisions, enforcement workflows, and international cooperation mechanisms like Interpol."
+    },
+    {
+        "id": "f4c00508-c31c-49d6-a08b-7fc940aeda7a",
+        "title": "God's Blessing on this wonderful world",
+        "label": "FIRST COMMIT",
+        "category": "FIRST COMMIT",
+        "icon": "https://se00n00.github.io/Personal-Blog/firstblog/mainimage.jpg",
+        "image": "firstblog/mainimage.jpg",
+        "links": "https://se00n00.github.io/Personal-Blog/article/f4c00508-c31c-49d6-a08b-7fc940aeda7a",
+        "description": "Whispers from the Himalayas: A Journey Through Celestial Gardens and Eternal Peaks"
     }
 ]
